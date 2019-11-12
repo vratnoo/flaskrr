@@ -1,8 +1,8 @@
-from flask import render_template
 from app import app
+from flask import render_template
 @app.route('/')
-@app.route('/index')
-def index():
-    user = {'username': 'kricodes','passs':'kricodes'}
-    
-    return render_template('index.html', title='Home', user=user)
+def hello():
+	return render_template('index.html',taa='what ever it takes')
+@app.route('/<kri>')	
+def hello2(kri):
+	return "HELLO,WORLD"+kri
