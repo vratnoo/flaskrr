@@ -1,0 +1,4 @@
+flask learning log check
+[*] flask basic 
+[*] templates
+[*] tamplate -> basic,if statement,loop 
