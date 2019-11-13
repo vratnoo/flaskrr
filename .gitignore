@@ -55,3 +55,8 @@ docs/_build/
 
 # PyBuilder
 target/
+__pycache__/microblog.cpython-36.pyc
+*.pyc
+*.pyc
+__pycache__/microblog.cpython-36.pyc
+__pycache__/microblog.cpython-36.pyc

@@ -1,18 +1,7 @@
-<html>
-
-    <head>
-        {% if taa %}
-        <title>{{ taa }} - Microblog</title>
-        {% else %}
-        <title>Welcome to Microblog!</title>
-        {% endif %}
-    </head>
-    <body>
-        <h1>Hello, {{ taa }}!</h1>
-        <h2>BRANCH NAME,{{ other}}</h2>
-    {% for others in other %}
+{% extends "base.html" %}
+{% block body %}
+	 
+     {% for others in other %}
         <P>Author :{{ others.author}}</P><h3> Books: {{ others.book}}</h3>
      {% endfor %}   
-    </body>
-
-</html>
+ {% endblock %}

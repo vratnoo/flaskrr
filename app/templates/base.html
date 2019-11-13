@@ -1,0 +1,20 @@
+<html>
+
+    <head>
+        {% if title %}
+        <title>{{ title }} - Microblog</title>
+        {% else %}
+        <title>Welcome to Microblog!</title>
+        {% endif %}
+    </head>
+    <body>
+    	<a href="{{ url_for('index') }}">Home</a>
+    	<a href="{{ url_for('login') }}">Login</a>
+        <h1>Hello, {{ title }}!</h1>
+        <h2>BRANCH NAME,{{ other}}</h2>
+        <p>#{{  get_flashed_messages() }}</p>
+      {% block body %}
+      {% endblock %}
+    </body>
+
+</html>
