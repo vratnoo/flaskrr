@@ -3,3 +3,4 @@ flask learning log check
 [*] templates
 [*] tamplate -> basic,if statement,loop
 [*] basic form ,validation,etc 
+[*] flask database basic,sqlalchemey,flask-migration,flask-shell context
