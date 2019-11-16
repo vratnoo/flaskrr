@@ -4,3 +4,4 @@ flask learning log check
 [*] tamplate -> basic,if statement,loop
 [*] basic form ,validation,etc 
 [*] flask database basic,sqlalchemey,flask-migration,flask-shell context
+[*] flask-login ,  registraion, validation,secuirty basic using database
