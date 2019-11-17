@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block body %}
 	 
-     {% for others in other %}
-        <P>Author :{{ others.author}}</P><h3> Books: {{ others.book}}</h3>
-     {% endfor %}   
+{% for post in posts %}
+{% include '_post.html' %}
+{% endfor %}    
  {% endblock %}
