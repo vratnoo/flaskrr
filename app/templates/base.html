@@ -10,8 +10,9 @@
     <body>
     
         <div>
-            Microblog:
+            Kricode:
             <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('explore') }}">Explore</a>
             {% if current_user.is_anonymous %}
             <a href="{{ url_for('login') }}">Login</a>
             {% else %}
@@ -23,8 +24,8 @@
             {% endif %}
         </div>
 
-        <h1>Hello, {{ title }}!</h1>
-        <h2>BRANCH NAME,{{ other}}</h2>
+        
+        
         <p>#{{  get_flashed_messages() }}</p>
       {% block body %}
       {% endblock %}
