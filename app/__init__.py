@@ -2,7 +2,9 @@ from flask import Flask
 from config import Config
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+from flask_bootstrap import Bootstrap
 from flask_login import LoginManager
+
 
 #for loginng error
 from logging.handlers import RotatingFileHandler
@@ -16,6 +18,8 @@ login = LoginManager(app)
 login.login_view = 'login'
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
+bootstrap = Bootstrap(app)
+
 if not app.debug:
     if not os.path.exists('logs'):
         os.mkdir('logs')

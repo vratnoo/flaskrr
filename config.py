@@ -9,4 +9,7 @@ class Config(object):
 
 
 	SECRET_KEY=os.environ.get('SECRET_KEY') or "KRICODE"
-	POSTS_PER_PAGE = 1
+	POSTS_PER_PAGE = 4
+
+
+
