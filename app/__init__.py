@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager
+from flask_moment import Moment
 
 
 #for loginng error
@@ -19,6 +20,8 @@ login.login_view = 'login'
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 bootstrap = Bootstrap(app)
+moment =  Moment(app)
+
 
 if not app.debug:
     if not os.path.exists('logs'):

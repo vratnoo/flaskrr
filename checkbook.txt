@@ -8,6 +8,6 @@ flask learning log check
 [*] user profile, jinja sbtemplate,gravatar,last seen etc
 [*] profile editing,error handling (created seprate view for error),
      resolved duplicate username editing error
-[-] Unit Testing, Email Support,Forget Password
+[-] Unit Testing, Email Support,Forget Password, babel plugin,ajax,blueprint, Full text Search
 [*] Learning about : Join operation in db,Pagination using Sqlalchemy,followers,user post facility etc
-[*] flask-bootstrap application
+[*] flask-bootstrap application , flask-moment , learn to implemeant  ,timezones issues
