@@ -161,3 +161,12 @@ def unfollow(username):
     db.session.commit()
     flash('You are not following {}!'.format(username))
     return redirect(url_for('user', username=username))
+
+
+# user_profile pop_up
+@app.route('/user/<username>/popup')
+@login_required
+def user_popup(username):
+    user = User.query.filter_by(username=username).first_or_404()
+    print(user)
+    return render_template('user_popup.html',user=user)
